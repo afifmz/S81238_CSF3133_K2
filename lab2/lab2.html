@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal profile page!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#profile">Profile</a> |
+        <a href="#hobbies">Hobbies</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Personal Information</h2>
+
+            <article>
+                <h3>About Me</h3>
+                <p>
+                    Hello! My name is Afif Hilmi.
+                    I am a Computer Science student.
+                    I enjoy learning about technology and programming.
+                </p>
+            </article>
+
+            <!-- Task 1: Create a Table -->
+            <h3>My Profile Details</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                </tr>
+
+                <tr>
+                    <td>Afif Hilmi</td>
+                    <td>22</td>
+                    <td>Student</td>
+                </tr>
+
+                <tr>
+                    <td>Education</td>
+                    <td>Degree</td>
+                    <td>Computer Science</td>
+                </tr>
+
+                <tr>
+                    <td>University</td>
+                    <td>UMT</td>
+                    <td>Mobile Computing</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+
+            <article>
+                <ul>
+                    <li>Running</li>
+                    <li>Programming</li>
+                    <li>Hacking</li>
+                    <li>Learning New Technologies</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Task 2: Design a Simple Form -->
+        <section id="contact">
+            <h2>Personal Profile Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Text Input -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <br><br>
+
+                <!-- Radio Buttons -->
+                <p>Gender:</p>
+
+                <input type="radio" id="male"
+                       name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female"
+                       name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <!-- Checkboxes -->
+                <p>Favorite Hobbies:</p>
+
+                <input type="checkbox" id="running"
+                       name="hobbies" value="Running">
+                <label for="running">Running</label>
+
+                <input type="checkbox" id="reading"
+                       name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="gaming"
+                       name="hobbies" value="Gaming">
+                <label for="gaming">Gaming</label>
+
+                <input type="checkbox" id="coding"
+                       name="hobbies" value="Coding">
+                <label for="coding">Coding</label>
+
+                <br><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Personal Profile Page</p>
+    </footer>
+
+</body>
+</html>
