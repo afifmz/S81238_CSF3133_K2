@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Contact Form and Calculator</title>
+</head>
+
+<body>
+
+    <header>
+        <p>3.7 LAB EXERCISE 3 WONDERBUUK - LAB3.HTML</p>
+        <h1>An interactive contact form with an inline calculator</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Header div</h2>
+            <p>
+                Site title in heading (block) with a slogan in
+                <span>inline text</span>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+
+            <form action="#" method="post">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label for="date">Preferred Contact Date:</label>
+                <input type="date" id="date" name="date">
+
+                <br><br>
+
+                <label for="satisfaction">Satisfaction Range:</label>
+                <input type="range" id="satisfaction"
+                       name="satisfaction" min="0" max="10">
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Calculator</h2>
+
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" name="num1">
+
+            <br><br>
+
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" name="num2">
+
+            <br><br>
+
+            <label>Sum:</label>
+            <output name="result">###</output>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Contact Information</p>
+        <p>&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
