@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+
+    <!--
+    Error 1 (Line 1): <!DOCTYPE> was incomplete.
+    Correction: Changed to <!DOCTYPE html>.
+
+    Error 2 (Line 9): Incorrect nesting of <h1> and <span>.
+    Correction: Placed <span> inside <h1> correctly.
+
+    Error 3 (Line 11): Used <span> for content section.
+    Correction: Changed <span> to <div> because content is a block section.
+
+    Error 4 (Line 13): Used < instead of &lt; and missing semicolon
+    after &amp.
+    Correction: Changed to &lt; and &amp;.
+
+    Error 5 (Line 14): Total calculation used string concatenation.
+    Correction: Used Number() to calculate the total numerically.
+
+    Error 6 (Line 18): Incorrect input type "emial".
+    Correction: Changed to type="email" and added required.
+
+    Error 7 (Line 22-23): Datalist ID did not match the input list.
+    Correction: Changed datalist ID to "movies".
+
+    Error 8 (Line 32): Range minimum and maximum values were reversed.
+    Correction: Changed min="5" max="1" to min="1" max="5".
+
+    Error 9 (Line 33): Incorrect output for attribute.
+    Correction: Changed "adult kid" to "adult child".
+
+    Error 10 (Line 38): Incorrect HTML entity &Copy.
+    Correction: Changed to &copy;.
+
+    Error 11 (Line 54-55): Duplicate closing body and html tags.
+    Correction: Removed the unnecessary duplicate tags.
+    -->
+
+    <!-- Header Section -->
+    <div id="header">
+
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+
+        <p>Welcome to Campus Cinema Ticket Booking System.</p>
+
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+
+        <h2>Book Your Ticket</h2>
+
+        <p>
+            Promotion: Tickets &lt; RM10 for students &amp; staff!
+        </p>
+
+        <!-- Ticket Booking Form -->
+        <form action="booking.php"
+              method="post"
+              oninput="
+              total.value = Number(this.elements['adult'].value) + Number(this.elements['child'].value);
+              price.value = (Number(this.elements['adult'].value) * 12) + (Number(this.elements['child'].value) * 8);
+              ">
+
+            <!-- Customer Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name"
+                   required autofocus>
+            <br><br>
+
+            <!-- Email Address -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email"
+                   required>
+            <br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number"
+                   required>
+            <br><br>
+
+            <!-- Show Date -->
+            <label for="date">Show Date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+
+            <!-- Show Time -->
+            <label for="time">Show Time:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+
+            <!-- Movie Selection Using Datalist -->
+            <label for="movie">Movie:</label>
+
+            <input type="text" id="movie" name="movie"
+                   list="movies"
+                   placeholder="Choose a movie">
+
+            <datalist id="movies">
+                <option value="Space Rangers">
+                <option value="Kampung Comedy">
+                <option value="Action Heroes">
+                <option value="The Adventure">
+            </datalist>
+
+            <br><br>
+
+            <!-- Adult Tickets -->
+            <label for="adult">Adult Tickets (RM12 each):</label>
+            <input type="number" id="adult" name="adult"
+                   min="0" value="0">
+            <br><br>
+
+            <!-- Child Tickets -->
+            <label for="child">Child Tickets (RM8 each):</label>
+            <input type="number" id="child" name="child"
+                   min="0" value="0">
+            <br><br>
+
+            <!-- Rating Slider -->
+            <label for="rating">Rate Our Service:</label>
+            <input type="range" id="rating" name="rating"
+                   min="1" max="5" step="1" value="3">
+            <br><br>
+
+            <!-- Total Ticket Calculation -->
+            <label>Total Tickets:</label>
+
+            <output name="total" for="adult child">0</output>
+
+            <br><br>
+
+            <!-- Total Price Calculation -->
+            <label>Total Price: RM </label>
+
+            <output name="price" for="adult child">0</output>
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Book Now">
+
+        </form>
+
+    </div>
+
+    <!-- Sidebar Section: Now Showing -->
+    <div id="sidebar">
+
+        <h2>Now Showing</h2>
+
+        <ul>
+
+            <li>
+                <strong>Space Rangers</strong>
+                <span> (PG-13)</span>
+                <a href="https://www.youtube.com/results?search_query=space+rangers+trailer"
+                   target="_blank">Watch Trailer</a>
+            </li>
+
+            <li>
+                <strong>Kampung Comedy</strong>
+                <span> (U)</span>
+                <a href="https://www.youtube.com/results?search_query=kampung+comedy+trailer"
+                   target="_blank">Watch Trailer</a>
+            </li>
+
+            <li>
+                <strong>Action Heroes</strong>
+                <span> (16)</span>
+                <a href="https://www.youtube.com/results?search_query=action+heroes+trailer"
+                   target="_blank">Watch Trailer</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+
+        <p>
+            e-Ticket&reg; &ndash; Campus Cinema
+            &lt; RM10 every Tuesday
+        </p>
+
+        <p>
+            Snacks &amp; Drinks Available!
+        </p>
+
+        <p>
+            &copy; 2026 CineKampus. All rights reserved.
+        </p>
+
+    </div>
+
+</body>
+</html>
