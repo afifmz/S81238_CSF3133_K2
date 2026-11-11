@@ -1,0 +1,164 @@
+
+/* Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #9ec423;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+/* Navigation */
+nav {
+    background-color: #141e30;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+
+nav a:visited {
+    color: #ddd;
+}
+
+nav a:hover {
+    background-color: #486581;
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: #f0a500;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #243b55;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #e09f3e;
+    font-weight: bold;
+}
+
+/* Video */
+video {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    color: gray;
+    margin-top: 8px;
+}
+
+/* Form */
+form {
+    max-width: 550px;
+}
+
+form > label {
+    display: block;
+    margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset {
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset label {
+    margin-right: 12px;
+}
+
+button {
+    background-color: #243b55;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e09f3e;
+}
+
+/* Footer */
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    fieldset label {
+        display: block;
+        margin: 8px 0;
+    }
+}
