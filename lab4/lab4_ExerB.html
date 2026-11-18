@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* List of errors corrected from the original code:
+           Line 13-16: Corrected link state order.
+           Line 17: Changed overlined to overline.
+           Line 19: Changed #intro to .intro.
+           Line 22: Added missing dot to .highlight.
+           Line 34: Added # to menu link.
+           Line 42, 46: Changed duplicate item IDs to classes.
+           Line 53: Added video controls.
+           Line 54: Corrected video MIME type to video/mp4.
+        */
+
+        /* General heading styling */
+        h1 {
+            text-decoration: overline;
+            color: #333333;
+            text-align: center;
+        }
+
+        /* Paragraph styling */
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+
+        /* Intro paragraph */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+            padding: 10px;
+        }
+
+        /* Highlighted prices */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        /* Old promotion price */
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        /* Menu item styling */
+        .item {
+            background-color: #FFF8E7;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #E0C9A6;
+        }
+
+        /* Video styling */
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Feedback form styling */
+        .feedback-form {
+            background-color: #FDEBD0;
+            padding: 20px;
+            border: 2px solid #C0392B;
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .feedback-form input[type="text"],
+        .feedback-form input[type="email"] {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        .feedback-form button {
+            background-color: #C0392B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+            .feedback-form {
+                width: 90%;
+                box-sizing: border-box;
+            }
+        }
+
+        /* Link states in correct order */
+        a:link {
+            color: #1A5276;
+        }
+
+        a:visited {
+            color: #7D3C98;
+        }
+
+        a:hover {
+            color: #E67E22;
+        }
+
+        a:active {
+            color: #C0392B;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+        <p class="intro">
+            Welcome to e-Café Campus! Enjoy freshly brewed coffee
+            and delicious local delights every day.
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <h2>Today's Menu</h2>
+
+        <!-- First Menu Item -->
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <p>
+                Freshly brewed traditional Malaysian coffee.
+            </p>
+            <p>
+                Old Price:
+                <span class="old-price">RM 4.50</span>
+                New Price:
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <!-- Second Menu Item -->
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>
+                Traditional nasi lemak served with sambal,
+                anchovies, peanuts and boiled egg.
+            </p>
+            <p>
+                Old Price:
+                <span class="old-price">RM 6.50</span>
+                New Price:
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Discover our café, freshly brewed coffee
+                and delicious campus food.
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="feedback">
+
+        <h2>Customer Feedback Form</h2>
+
+        <form class="feedback-form">
+
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your name" required>
+
+            <br><br>
+
+            <!-- Email Field -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <br><br>
+
+            <!-- Visit Type -->
+            <p>Visit Type:</p>
+
+            <input type="radio" id="dinein" name="visit"
+                   value="Dine-in">
+            <label for="dinein">Dine-in</label>
+
+            <input type="radio" id="takeaway" name="visit"
+                   value="Take-away">
+            <label for="takeaway">Take-away</label>
+
+            <br><br>
+
+            <!-- Favourite Items -->
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" id="coffee" name="favourite"
+                   value="Kopi Tarik">
+            <label for="coffee">Kopi Tarik</label>
+
+            <br>
+
+            <input type="checkbox" id="nasi" name="favourite"
+                   value="Nasi Lemak">
+            <label for="nasi">Nasi Lemak</label>
+
+            <br>
+
+            <input type="checkbox" id="tea" name="favourite"
+                   value="Tea">
+            <label for="tea">Tea</label>
+
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+
+        <p>&copy; 2026 e-Café Campus. All Rights Reserved.</p>
+
+        <!-- Contact Address -->
+        <address>
+            Contact us:
+            <a href="mailto:ecafecampus@gmail.com">
+                ecafecampus@gmail.com
+            </a>
+        </address>
+
+    </footer>
+
+</body>
+</html>

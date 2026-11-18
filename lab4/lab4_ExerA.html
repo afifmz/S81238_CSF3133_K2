@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu - Tourism Promotion</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styleA.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS Rule 1 */
+        #video {
+            background-color: #e8f5e9;
+        }
+
+        /* Internal CSS Rule 2 */
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Visit Terengganu</h1>
+        <p>Discover the Beauty of Terengganu</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Terengganu</h2>
+            <p class="center">
+                Experience beautiful beaches, amazing islands,
+                delicious traditional food and rich Malaysian culture.
+                Plan your next holiday with us!
+            </p>
+
+            <h3>Available Trip Seats</h3>
+            <label for="seats">Seats Filled:</label>
+            <meter id="seats" min="0" max="40" value="28">
+                28 out of 40
+            </meter>
+            <p>28 out of 40 seats have been filled!</p>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+
+            <div class="destination-container">
+
+                <!-- Destination 1 -->
+                <article class="card">
+                    <h3>Pulau Redang</h3>
+                    <p>
+                        Enjoy crystal-clear water, beautiful beaches
+                        and exciting snorkelling activities.
+                    </p>
+                    <p>
+                        Old Price:
+                        <span class="old-price">RM 299</span>
+                    </p>
+                    <p class="price">Promotion: RM 199</p>
+                </article>
+
+                <!-- Destination 2 -->
+                <article class="card">
+                    <h3>Pulau Perhentian</h3>
+                    <p>
+                        Explore amazing marine life and relax
+                        on one of Malaysia's beautiful islands.
+                    </p>
+                    <p>
+                        Old Price:
+                        <span class="old-price">RM 399</span>
+                    </p>
+                    <p class="price">Promotion: RM 249</p>
+                </article>
+
+                <!-- Destination 3 -->
+                <article class="card">
+                    <h3>Masjid Kristal</h3>
+                    <p>
+                        Visit the iconic Crystal Mosque and discover
+                        the unique Islamic architecture of Terengganu.
+                    </p>
+                    <p>
+                        Old Price:
+                        <span class="old-price">RM 150</span>
+                    </p>
+                    <p class="price">Promotion: RM 99</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Explore Terengganu</h2>
+
+            <figure>
+                <video width="640" height="360" controls>
+                    <source src="terengganu.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <figcaption class="center">
+                    Discover the beautiful attractions of Terengganu.
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- Trip Registration Section -->
+        <section id="trip">
+            <h2>Trip Interest Form</h2>
+
+            <form class="trip-form">
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <!-- Email -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <!-- Traveller Type -->
+                <p>Traveller Type:</p>
+
+                <input type="radio" id="student" name="traveller"
+                       value="Student">
+                <label for="student">Student</label>
+
+                <input type="radio" id="staff" name="traveller"
+                       value="Staff">
+                <label for="staff">Staff</label>
+
+                <input type="radio" id="public" name="traveller"
+                       value="Public">
+                <label for="public">Public</label>
+
+                <!-- Interests -->
+                <p>Interests:</p>
+
+                <input type="checkbox" id="islands" name="interests"
+                       value="Islands">
+                <label for="islands">Islands</label><br>
+
+                <input type="checkbox" id="food" name="interests"
+                       value="Food">
+                <label for="food">Food</label><br>
+
+                <input type="checkbox" id="culture" name="interests"
+                       value="Culture">
+                <label for="culture">Culture</label><br>
+
+                <input type="checkbox" id="nature" name="interests"
+                       value="Nature">
+                <label for="nature">Nature</label><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu Tourism Promotion</p>
+        <p>
+            Contact us:
+            <a href="mailto:info@visit-terengganu.com">
+                info@visit-terengganu.com
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>

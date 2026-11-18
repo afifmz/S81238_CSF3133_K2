@@ -1,0 +1,70 @@
+
+/* =====================================
+   e-Cafe Campus - External CSS
+   Navigation Bar Styling
+   ===================================== */
+
+/* Remove bullets and default spacing */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #6E2C00;
+    text-align: center;
+}
+
+/* Display navigation items horizontally */
+nav ul li {
+    display: inline-block;
+}
+
+/* Navigation links */
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Navigation hover effect */
+nav ul li a:hover {
+    background-color: #D35400;
+    color: white;
+}
+
+/* Navigation active link */
+nav ul li a:active {
+    background-color: #A04000;
+    color: white;
+}
+
+/* Navigation visited link */
+nav ul li a:visited {
+    color: #FAD7A0;
+}
+
+/* Keep hover colour working on visited links */
+nav ul li a:visited:hover {
+    background-color: #D35400;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    background-color: #6E2C00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer paragraph */
+footer p {
+    color: white;
+    text-align: center;
+}
+
+/* Footer email link */
+footer address a {
+    color: white;
+}
