@@ -1,0 +1,106 @@
+/* Body */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #003b5c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #008080;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    background-color: #004d4d;
+    color: yellow;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+}
+
+/* Section */
+section {
+    margin-bottom: 30px;
+}
+
+/* Heading */
+h2 {
+    color: #003b5c;
+    border-bottom: 2px solid #008080;
+    padding-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #003b5c;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+/* Alternating Row Colours */
+tr:nth-child(even) {
+    background-color: #e0f2f1;
+}
+
+/* Table Hover */
+tr:hover {
+    background-color: #b2dfdb;
+}
+
+/* Footer */
+footer {
+    background-color: #d9e6e6;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #003b5c;
+}
